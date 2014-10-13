@@ -1,0 +1,6 @@
+Java.MP.C4.M3.GC Default Task 2:
+java -Xms3m -Xmx12m -XX:NewSize=1m -XX:PermSize=20m -XX:MaxPermSize=20 -XX:+UseParallelGC -jar loader-1.0-SNAPSHOT.jar
+
+
+Java.MP.C4.M3.GC Default Task 4:
+java -Xms6m -Xmx18m -XX:NewSize=2m -XX:PermSize=20m -XX:MaxPermSize=30 -XX:+UseConcMarkSweepGC -jar loader-1.0-SNAPSHOT.jar
