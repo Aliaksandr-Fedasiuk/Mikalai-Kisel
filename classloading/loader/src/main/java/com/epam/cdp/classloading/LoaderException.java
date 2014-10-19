@@ -1,4 +1,4 @@
-package com.epam.cdp.loader;
+package com.epam.cdp.classloading;
 
 /**
  * @author kisel.nikolay@gmail.com

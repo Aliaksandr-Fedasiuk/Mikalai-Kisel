@@ -1,6 +1,4 @@
-package com.epam.cdp.data;
-
-import com.epam.cdp.loader.Module;
+package com.epam.cdp.classloading;
 
 /**
  * @author kisel.nikolay@gmail.com

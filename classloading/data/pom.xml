@@ -3,11 +3,11 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.epam.cdp</groupId>
+    <groupId>com.epam.cdp.classloading</groupId>
     <artifactId>classloading</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.epam.cdp.data</groupId>
+  <groupId>com.epam.cdp.classloading</groupId>
   <artifactId>data</artifactId>
   <version>1.0-SNAPSHOT</version>
   <name>data</name>
@@ -17,14 +17,7 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>com.epam.cdp.loader</groupId>
+      <groupId>com.epam.cdp.classloading</groupId>
       <artifactId>loader</artifactId>
     </dependency>
   </dependencies>

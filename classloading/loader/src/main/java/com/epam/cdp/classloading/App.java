@@ -1,4 +1,4 @@
-package com.epam.cdp.loader;
+package com.epam.cdp.classloading;
 
 import org.apache.log4j.Logger;
 
@@ -11,8 +11,8 @@ import java.util.Scanner;
 public class App {
 
     public static final Logger logger = Logger.getLogger(App.class);
-    public static final String CLASS_NAME_1 = "com.epam.cdp.data.ModuleImpl";
-    public static final String CLASS_NAME_2 = "com.epam.cdp.data.ModuleImpl2";
+    public static final String CLASS_NAME_1 = "com.epam.cdp.classloading.ModuleImpl";
+    public static final String CLASS_NAME_2 = "com.epam.cdp.classloading.ModuleImpl2";
 
     public static JarClassLoader jarClassLoader = new JarClassLoader();
 
