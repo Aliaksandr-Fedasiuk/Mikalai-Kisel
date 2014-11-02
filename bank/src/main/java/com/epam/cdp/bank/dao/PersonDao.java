@@ -1,14 +1,14 @@
-package com.epam.cdp.multithreading.service;
+package com.epam.cdp.bank.dao;
 
-import com.epam.cdp.multithreading.model.Person;
+import com.epam.cdp.bank.model.Person;
 
 import java.util.List;
 
 /**
  * @author kisel.nikolay@gmail.com
- * @since 26.10.2014
+ * @since 02.11.2014
  */
-public interface PersonService {
+public interface PersonDao {
 
     public void save(final Person person);
 

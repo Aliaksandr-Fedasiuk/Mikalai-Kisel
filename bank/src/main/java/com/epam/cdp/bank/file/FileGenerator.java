@@ -1,4 +1,4 @@
-package com.epam.cdp.multithreading.file;
+package com.epam.cdp.bank.file;
 
 import java.io.IOException;
 

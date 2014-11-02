@@ -1,8 +1,8 @@
-package com.epam.cdp.multithreading;
+package com.epam.cdp.bank;
 
-import com.epam.cdp.multithreading.model.Person;
-import com.epam.cdp.multithreading.service.PersonService;
-import com.epam.cdp.multithreading.service.PersonServiceImpl;
+import com.epam.cdp.bank.model.Person;
+import com.epam.cdp.bank.service.PersonService;
+import com.epam.cdp.bank.service.PersonServiceImpl;
 
 import java.io.IOException;
 import java.util.List;

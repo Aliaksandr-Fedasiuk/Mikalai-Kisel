@@ -1,4 +1,4 @@
-package com.epam.cdp.multithreading.model;
+package com.epam.cdp.bank.model;
 
 /**
  * @author kisel.nikolay@gmail.com
@@ -6,6 +6,7 @@ package com.epam.cdp.multithreading.model;
  */
 public class Person {
 
+    private Long id;
     private String name;
     private String surname;
 
@@ -17,6 +18,12 @@ public class Person {
     }
 
     public Person(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+
+    public Person(Long id, String name, String surname) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
     }
@@ -33,6 +40,14 @@ public class Person {
         this.name = name;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -41,18 +56,4 @@ public class Person {
                 '}';
     }
 
-    public String convertToString() {
-        return name + ";" + surname;
-    }
-
-    public static Person createPerson(final String personString) {
-        Person person = new Person();
-        String[] parts = personString.split(";");
-        if (parts.length == 2) {
-            person.setName(parts[0]);
-            person.setSurname(parts[1]);
-        }
-
-        return person;
-    }
 }

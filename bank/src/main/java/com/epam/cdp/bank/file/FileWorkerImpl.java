@@ -1,4 +1,4 @@
-package com.epam.cdp.multithreading.file;
+package com.epam.cdp.bank.file;
 
 import org.apache.log4j.Logger;
 
@@ -23,6 +23,10 @@ public class FileWorkerImpl implements FileWorker {
     private final Object sync = new Object();
 
     public FileWorkerImpl() {
+    }
+
+    public FileWorkerImpl(String fileName) {
+        this.fileName = fileName;
     }
 
     public void write(final String str) throws IOException {

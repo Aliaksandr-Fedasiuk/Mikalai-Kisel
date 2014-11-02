@@ -7,10 +7,10 @@
     <artifactId>cdp</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>com.epam.cdp.multithreading</groupId>
-  <artifactId>multithreading</artifactId>
+  <groupId>com.epam.cdp.bank</groupId>
+  <artifactId>bank</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>multithreading</name>
+  <name>bank</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -26,6 +26,16 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-all</artifactId>
+    </dependency>
   </dependencies>
 
 
@@ -38,7 +48,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.epam.cdp.multithreading.App</mainClass>
+              <mainClass>com.epam.cdp.bank.App</mainClass>
               <classpathPrefix>dependency-jars/</classpathPrefix>
             </manifest>
           </archive>
