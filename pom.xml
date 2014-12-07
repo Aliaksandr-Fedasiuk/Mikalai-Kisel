@@ -11,6 +11,7 @@
     <module>memorymanagement</module>
     <module>bank</module>
     <module>bank-ejb</module>
+    <module>jpa-hibernate</module>
   </modules>
 
   <dependencyManagement>
