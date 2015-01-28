@@ -15,6 +15,9 @@
         </c:if>
         <c:if test="${not empty hotel.hotelName }">
             <h3>Update hotel</h3>
+            <p/>
+            <label>hotel id: </label>
+            <form:input path="id" value="${hotel.id}" readonly="true"/>
         </c:if>
         <p/>
         <label>hotel name:*</label>

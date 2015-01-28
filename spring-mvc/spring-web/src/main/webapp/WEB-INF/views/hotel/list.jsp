@@ -21,7 +21,7 @@
             <tbody>
             <c:forEach items="${hotels}" var="hotel">
                 <tr>
-                    <td><a href="/hotels/${hotel.id}"/>${hotel.id}</td>
+                    <td><a href="${pageContext.request.contextPath}/hotels/${hotel.id}"/>${hotel.id}</td>
                     <td>${hotel.hotelName}</td>
                     <td>${hotel.countryName}</td>
                 </tr>
