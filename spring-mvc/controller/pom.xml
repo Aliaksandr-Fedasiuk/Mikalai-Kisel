@@ -24,11 +24,6 @@
     </dependency>
 
     <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-mvc</artifactId>
-    </dependency>
-
-    <dependency>
       <groupId>com.epam.cdp</groupId>
       <artifactId>service</artifactId>
     </dependency>

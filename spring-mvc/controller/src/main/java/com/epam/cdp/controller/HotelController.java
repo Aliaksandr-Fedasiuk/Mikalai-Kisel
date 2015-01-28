@@ -1,17 +1,17 @@
 package com.epam.cdp.controller;
 
-import com.epam.cdp.model.Hotel;
-import com.epam.cdp.service.HotelService;
-import com.epam.cdp.service.HotelServiceImpl;
+import java.util.List;
+
+import javax.annotation.Resource;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.annotation.Resource;
-import java.util.List;
+import com.epam.cdp.model.Hotel;
+import com.epam.cdp.service.HotelService;
 
 /**
  * <p>
