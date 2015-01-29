@@ -74,7 +74,7 @@ public class Subscriber {
         subscriber.setUpSubscriber();
 //        subscriber.stop();
 
-        Thread.sleep(100000);
+        while (true) ;
     }
 
 }
