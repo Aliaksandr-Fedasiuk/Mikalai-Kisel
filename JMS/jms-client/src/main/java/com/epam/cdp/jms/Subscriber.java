@@ -63,9 +63,12 @@ public class Subscriber {
     }
 
     public void stop() throws JMSException {
-        topicConnection.stop();
-        topicSession.close();
-        topicConnection.close();
+        if (topicConnection != null) {
+            topicConnection.stop();
+        }
+        if (topicSession != null) {
+            topicSession.close();
+        }
     }
 
     public static void main(String[] args) throws JMSException, NamingException, InterruptedException {
@@ -74,7 +77,8 @@ public class Subscriber {
         subscriber.setUpSubscriber();
 //        subscriber.stop();
 
-        while (true) ;
+        while (true) {
+        }
     }
 
 }

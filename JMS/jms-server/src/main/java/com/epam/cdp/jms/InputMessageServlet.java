@@ -17,6 +17,8 @@ import java.io.IOException;
 @WebServlet(description = "Input Message Servlet", urlPatterns = {"/InputMessageServlet", "/InputMessageServlet.do"})
 public class InputMessageServlet extends HttpServlet {
 
+    private static final long serialVersionUID = -5792353423192865715L;
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         request.getRequestDispatcher("WEB-INF/jsps/message/input.jsp").forward(request, response);
