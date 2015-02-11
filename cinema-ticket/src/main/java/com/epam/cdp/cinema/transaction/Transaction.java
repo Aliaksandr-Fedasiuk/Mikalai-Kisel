@@ -1,18 +1,19 @@
 package com.epam.cdp.cinema.transaction;
 
+import com.epam.cdp.cinema.domain.User;
+
 /**
  * @author mikalai.kisel@ihg.com
  * @since Feb 10, 2015.
  */
-public interface Transaction
-{
+public interface Transaction {
 
-  public void abort( Long transactionId );
+    public void abort();
 
-  public void commit( Long transactionId );
+    public void commit();
 
-  public Long beginTransaction();
+    public Long beginTransaction();
 
-  public void createSavepoint( final Object object );
+    public void createSavepoint(final User user, Double cost);
 
 }
