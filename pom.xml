@@ -16,6 +16,7 @@
     <module>spring-mvc</module>
     <module>JMS</module>
     <module>cinema-ticket</module>
+    <module>cinema-ticket2</module>
   </modules>
 
   <dependencyManagement>
