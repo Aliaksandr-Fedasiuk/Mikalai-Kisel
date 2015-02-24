@@ -3,6 +3,8 @@ package com.epam.cdp.port;
 import com.epam.cdp.application.service.TicketService;
 import com.epam.cdp.events.BuyTicketInitEvent;
 import com.epam.cdp.messaging.MessageConsumer;
+import com.epam.cdp.messaging.rabbitmq.MessageConsumerImpl;
+import com.epam.cdp.messaging.socket.MessageConsumerSocketImpl;
 import com.google.gson.Gson;
 
 import java.io.IOException;
@@ -21,7 +23,8 @@ public class BuyTicketListener {
     private TicketService ticketService = new TicketService();
 
     public BuyTicketListener() throws IOException {
-        this.messageConsumer = new MessageConsumer("TicketExchange");
+//        this.messageConsumer = new MessageConsumerImpl("TicketExchange");
+        this.messageConsumer = MessageConsumerSocketImpl.getMessageConsumer();
     }
 
     public void readMessage() throws InterruptedException {

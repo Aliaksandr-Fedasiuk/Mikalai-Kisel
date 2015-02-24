@@ -1,9 +1,5 @@
 package com.epam.cdp.messaging;
 
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-
 import java.io.IOException;
 
 /**
@@ -13,25 +9,7 @@ import java.io.IOException;
  * @author kisel.nikolay@gmail.com
  * @since 18 Feb, 2015
  */
-public class MessageProducer {
+public interface MessageProducer {
 
-    public static final String EXCHANGE_TYPE = "fanout";
-
-    private Channel channel;
-    private String exchangeName;
-
-    public MessageProducer(final String exchangeName) throws IOException {
-        this.exchangeName = exchangeName;
-
-        ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        Connection connection = factory.newConnection();
-        this.channel = connection.createChannel();
-
-        this.channel.exchangeDeclare(exchangeName, EXCHANGE_TYPE);
-    }
-
-    public void send(final String message) throws IOException {
-        channel.basicPublish(exchangeName, "", null, message.getBytes());
-    }
+    public void send(final String message) throws IOException;
 }

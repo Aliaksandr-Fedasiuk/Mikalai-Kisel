@@ -2,7 +2,9 @@ package com.epam.cdp.application;
 
 import com.epam.cdp.events.BuyTicketInitEvent;
 import com.epam.cdp.events.Event;
+import com.epam.cdp.port.AbstractEventDispatcher;
 import com.epam.cdp.port.RabbitMQEventDispatcher;
+import com.epam.cdp.port.SocketEventDispatcher;
 
 import java.io.IOException;
 
@@ -15,11 +17,12 @@ import java.io.IOException;
  */
 public class TicketService {
 
-    private RabbitMQEventDispatcher dispatcher;
+    private AbstractEventDispatcher dispatcher;
 
     public TicketService() {
         try {
-            this.dispatcher = new RabbitMQEventDispatcher();
+//            this.dispatcher = new RabbitMQEventDispatcher();
+            this.dispatcher = new SocketEventDispatcher();
         } catch (IOException e) {
             e.printStackTrace();
         }
